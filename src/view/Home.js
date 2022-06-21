@@ -12,7 +12,6 @@ import Team from '../components/home/Team'
 import Query_test from '../components/home/Query_test'
 import Video from '../components/home/Video'
 import News from '../components/home/News'
-import Newsletter from '../components/home/Newsletter'
 
 const Home = () => {
   return (
@@ -69,10 +68,6 @@ const Home = () => {
       {/* News Section Three */}
       <News />
       {/* End News Section Three */}
-
-      {/* CTA Section Five */}
-      <Newsletter />
-      {/* End CTA Section Five */}
 
 
     </>
