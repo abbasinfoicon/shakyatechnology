@@ -1,4 +1,34 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options = {
+    loop: true,
+    margin: 30,
+    nav: true,
+    smartSpeed: 500,
+    autoplay: 4000,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        610: {
+            items: 2
+        },
+        800: {
+            items: 2
+        },
+        1024: {
+            items: 3
+        }
+    }
+}
 
 const News = () => {
     return (
@@ -8,7 +38,7 @@ const News = () => {
                     <div className="title style-two">News and Updates Artical</div>
                     <h2>Latest From Our Blog Post <br /> Check Now</h2>
                 </div>
-                <div className="three-item-carousel owl-carousel owl-theme">
+                <OwlCarousel className="three-item-carousel owl-theme" {...options}>
 
                     {/* News Block Four */}
                     <div className="news-block-four">
@@ -244,7 +274,7 @@ const News = () => {
                         </div>
                     </div>
 
-                </div>
+                </OwlCarousel>
             </div>
         </section>
     )

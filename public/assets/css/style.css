@@ -830,7 +830,7 @@ img{
 ***/
 
 .main-header{
-	position:absolute;
+	/* position:absolute; */
 	z-index:99;
 	width:100%;
 }
@@ -5966,20 +5966,27 @@ padding-top: 5px;
 
 .projects-section .owl-nav .owl-prev,
 .projects-section .owl-nav .owl-next{
-	position:relative;
+	position:
+	relative;
 	width:44px;
 	height:44px;
 	font-size:22px;
-	text-align:center;
+	text-align:
+	center;
 	line-height:42px;
 	margin-bottom:12px;
-	color:rgba(0,0,0,0.60);
-	border:1px solid rgba(0,0,0,0.20);
+	color:
+	rgba(0,0,0,0.60);
+	border:1px solid
+	rgba(0,0,0,0.20);
 	-webkit-transition:all 450ms ease;
 	-ms-transition:all 450ms ease;
 	-o-transition:all 450ms ease;
 	-moz-transition:all 450ms ease;
-	transition:all 450ms ease;
+	transition:
+	all 450ms ease;
+	background: transparent;
+	display: block;
 }
 
 .projects-section .owl-nav .owl-prev:hover,
@@ -8819,21 +8826,26 @@ padding-top: 5px;
 
 .services-section-five .owl-nav .owl-prev,
 .services-section-five .owl-nav .owl-next{
-	position:relative;
+	position:
+	relative;
 	width:50px;
 	height:50px;
 	color:#ffffff;
 	line-height:48px;
-	text-align:center;
+	text-align:
+	center;
 	font-size:22px;
 	margin-left:10px;
-	display:inline-block;
+	display:
+	inline-block;
 	border:1px solid #ffffff;
-	transition:all 600ms ease;
+	transition:
+	all 600ms ease;
 	-moz-transition:all 600ms ease;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
+	background: transparent;
 }
 
 .services-section-five .owl-nav .owl-prev:hover,
@@ -9238,21 +9250,27 @@ padding-top: 5px;
 
 .default-section .carousel-column .owl-nav .owl-prev,
 .default-section .carousel-column .owl-nav .owl-next{
-	position:relative;
+	position:
+	relative;
 	width:44px;
 	height:44px;
 	color:#111111;
 	font-size:20px;
 	line-height:42px;
 	margin-left:10px;
-	text-align:center;
-	display:inline-block;
-	border:1px solid rgba(0,0,0,0.50);
-	transition:all 600ms ease;
+	text-align:
+	center;
+	display:
+	inline-block;
+	border:1px solid
+	rgba(0,0,0,0.50);
+	transition:
+	all 600ms ease;
 	-moz-transition:all 600ms ease;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
+	background: transparent;
 }
 
 .default-section.style-two .carousel-column .owl-nav .owl-prev:hover,

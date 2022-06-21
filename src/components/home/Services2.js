@@ -1,4 +1,34 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options = {
+    loop: true,
+    margin: 30,
+    nav: true,
+    smartSpeed: 500,
+    autoplay: 4000,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        610: {
+            items: 2
+        },
+        800: {
+            items: 2
+        },
+        1024: {
+            items: 3
+        }
+    }
+}
 
 const Services2 = () => {
     return (
@@ -10,7 +40,7 @@ const Services2 = () => {
                         <div className="title">working process</div>
                         <h2>How we work for customers <br /> to prepare on the requirement</h2>
                     </div>
-                    <div className="three-item-carousel owl-carousel owl-theme">
+                    <OwlCarousel className="three-item-carousel owl-theme" {...options}>
 
                         {/* Service Block Five */}
                         <div className="service-block-five">
@@ -84,7 +114,7 @@ const Services2 = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </OwlCarousel>
                 </div>
             </div>
         </section>

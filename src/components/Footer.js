@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 <div className="footer-column col-lg-6 col-md-6 col-sm-12">
                   <div className="footer-widget logo-widget">
                     <div className="logo">
-                      <a href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+                      <Link to="/"><img src="assets/images/logo.png" alt="" /></Link>
                     </div>
                     <div className="text">We are the best world Information Technology Company. Providing the highest quality in hardware & Network solutions. 
                     About more than 25 years of experience and 1000 of innovative achievements.</div>
@@ -35,12 +36,12 @@ const Footer = () => {
                   <div className="footer-widget links-widget">
                     <h4>IT Services</h4>
                     <ul className="list-link">
-                      <li><a href="#">Graphic Designing</a></li>
-                      <li><a href="#">Product Design</a></li>
-                      <li><a href="#">Analytic Solutions</a></li>
-                      <li><a href="#">Web Development</a></li>
-                      <li><a href="#">Artificial Intelligence</a></li>
-                      <li><a href="#">Software Development</a></li>
+                      <li><Link to="/services">Graphic Designing</Link></li>
+                      <li><Link to="/services">Product Design</Link></li>
+                      <li><Link to="/services">Analytic Solutions</Link></li>
+                      <li><Link to="/services">Web Development</Link></li>
+                      <li><Link to="/services">Artificial Intelligence</Link></li>
+                      <li><Link to="/services">Software Development</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -107,10 +108,10 @@ const Footer = () => {
             {/* Column */}
             <div className="column col-lg-6 col-md-12 col-sm-12">
               <ul className="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">shop</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About us</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
           </div>

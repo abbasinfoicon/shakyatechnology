@@ -1,4 +1,34 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options = {
+    loop: true,
+    margin: 30,
+    nav: true,
+    smartSpeed: 500,
+    autoplay: 4000,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        610: {
+            items: 2
+        },
+        800: {
+            items: 2
+        },
+        1024: {
+            items: 3
+        }
+    }
+}
 
 const Team = () => {
     return (
@@ -10,7 +40,7 @@ const Team = () => {
                     <div className="title style-two">Our Expert Person</div>
                     <h2>Meet Our intelligence <br /> Team Members</h2>
                 </div>
-                <div className="three-item-carousel owl-carousel owl-theme">
+                <OwlCarousel className="three-item-carousel owl-carousel owl-theme" {...options}>
 
                     {/* Team Block Two */}
                     <div className="team-block-two">
@@ -201,7 +231,7 @@ const Team = () => {
                         </div>
                     </div>
 
-                </div>
+                </OwlCarousel>
             </div>
         </section>
     )

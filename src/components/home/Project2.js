@@ -1,4 +1,49 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options1 = {
+    loop: true,
+    items: 1,
+    margin: 0,
+    nav: false,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000
+}
+const options2 = {
+    loop: true,
+    margin: 25,
+    items: 1,
+    nav: false,
+    navText: ['<span class="icon flaticon-left-arrow-2"></span>', '<span class="icon flaticon-right-arrow-1"></span>'],
+    dots: true,
+    center: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    responsive: {
+        0: {
+            items: 2,
+            autoWidth: false
+        },
+        400: {
+            items: 3,
+            autoWidth: false
+        },
+        600: {
+            items: 3,
+            autoWidth: false
+        },
+        1000: {
+            items: 3,
+            autoWidth: false
+        },
+        1200: {
+            items: 3,
+            autoWidth: false
+        }
+    },
+}
 
 const Project2 = () => {
     return (
@@ -21,7 +66,7 @@ const Project2 = () => {
                     <div className="testimonial-outer">
 
                         {/* Client Testimonial Carousel */}
-                        <div className="client-testimonial-carousel owl-carousel owl-theme">
+                        <OwlCarousel className="client-testimonial-carousel owl-theme" {...options1}>
 
                             {/* Case Image Block */}
                             <div className="case-image-block">
@@ -86,11 +131,11 @@ const Project2 = () => {
                                 </div>
                             </div>
 
-                        </div>
+                        </OwlCarousel>
 
                         {/* Product Thumbs Carousel */}
                         <div className="client-thumb-outer">
-                            <div className="client-thumbs-carousel owl-carousel owl-theme">
+                            <OwlCarousel className="client-thumbs-carousel owl-theme" {...options2}>
                                 <div className="thumb-item">
                                     <figure className="thumb-box"><img src="assets/images/resource/project-thumb-1.jpg" alt="" /></figure>
                                 </div>
@@ -118,7 +163,7 @@ const Project2 = () => {
                                 <div className="thumb-item">
                                     <figure className="thumb-box"><img src="assets/images/resource/project-thumb-3.jpg" alt="" /></figure>
                                 </div>
-                            </div>
+                            </OwlCarousel>
                         </div>
 
                     </div>

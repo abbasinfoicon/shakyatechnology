@@ -1,4 +1,32 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options = {
+    loop: true,
+    margin: 0,
+    nav: true,
+    smartSpeed: 500,
+    autoplay: 4000,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        800: {
+            items: 1
+        },
+        1024: {
+            items: 1
+        }
+    }
+}
+
 
 const Query_test = () => {
     return (
@@ -54,7 +82,7 @@ const Query_test = () => {
                                 <div className="title">Our Testimonial</div>
                                 <h2>Words From Our Clients</h2>
                             </div>
-                            <div className="single-item-carousel owl-carousel owl-theme">
+                            <OwlCarousel className="single-item-carousel owl-theme" {...options}>
                                 {/* Testimonial Block Two */}
                                 <div className="testimonial-block-two">
                                     <div className="inner-box">
@@ -103,7 +131,7 @@ const Query_test = () => {
                                         <div className="text">I am only use Transida logistics for my shipping needs. My clients have all come to expect excellent shipping & handling of their merchandise.</div>
                                     </div>
                                 </div>
-                            </div>
+                            </OwlCarousel>
                         </div>
                     </div>
                 </div>

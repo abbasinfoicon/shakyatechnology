@@ -1,4 +1,31 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+
+const options = {
+    loop: true,
+    margin: 30,
+    nav: true,
+    smartSpeed: 500,
+    autoplay: 4000,
+    navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 2
+        },
+        600: {
+            items: 3
+        },
+        800: {
+            items: 4
+        },
+        1024: {
+            items: 4
+        }
+    }
+}
 
 const Client = () => {
     return (
@@ -8,7 +35,7 @@ const Client = () => {
                     <div className="image-layer" style={{ backgroundImage: 'url(assets/images/background/pattern-18.png)' }}></div>
                     <div className="sponsors-outer">
                         {/*Sponsors Carousel*/}
-                        <ul className="sponsors-carousel owl-carousel owl-theme">
+                        <OwlCarousel className="sponsors-carousel owl-carousel owl-theme" {...options}>
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/1.png" alt="" /></a></figure></li>
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/2.png" alt="" /></a></figure></li>
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/3.png" alt="" /></a></figure></li>
@@ -17,7 +44,7 @@ const Client = () => {
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/2.png" alt="" /></a></figure></li>
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/3.png" alt="" /></a></figure></li>
                             <li className="slide-item"><figure className="image-box"><a href="#"><img src="assets/images/clients/4.png" alt="" /></a></figure></li>
-                        </ul>
+                        </OwlCarousel>
                     </div>
                 </div>
             </div>
