@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
     return (
         <>
-            <PageTitle title="Not Found"/>
+            <PageTitle title="Not Found" bg="5.jpg" />
 
 
             {/*Error Section*/}

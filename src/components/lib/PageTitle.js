@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const PageTitle = (props) => {
   return (
     
-    <section className="page-title" style={{backgroundImage: 'url(assets/images/background/5.jpg)'}}>
+    <section className="page-title" style={{backgroundImage: `url(assets/images/background/${ props.bg })`}}>
     	<div className="auto-container">
 			<h2>{ props.title }</h2>
 			<ul className="page-breadcrumb">

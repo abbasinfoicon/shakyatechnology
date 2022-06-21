@@ -6,7 +6,7 @@ import PageTitle from '../components/lib/PageTitle'
 const About = () => {
   return (
     <>
-      <PageTitle title="About us" />
+      <PageTitle title="About us" bg="5.jpg" />
     </>
   )
 }

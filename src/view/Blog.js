@@ -4,7 +4,7 @@ import PageTitle from '../components/lib/PageTitle'
 const Blog = () => {
   return (
     <>
-      <PageTitle title="Blog" />
+      <PageTitle title="Blog" bg="3.jpg" />
     </>
   )
 }
